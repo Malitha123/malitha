@@ -7,17 +7,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <div class="topnav" id="navbar">
+    <a class="active" href="#about">About</a>
+    <a href="#news">News</a>
+    <a href="#publications">Publications</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#more">More...</a>  
+    </div>
+          
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      
     <tr style="padding:0px">
       <td style="padding:0px">
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr style="padding:0px">
             <td style="padding:2.5%;width:63%;vertical-align:middle">
-              <p style="text-align:center">
+              <p style="text-align:center" id="about">
                 <name>Malitha Gunawardhana</name>
               </p>
               <p>
@@ -52,7 +62,7 @@
           </tr>
         </tbody></table>
 
-        <h2>News</h2>
+        <h2 id="news">News</h2>
             <ul>
                 <li><b>March 2023</b>: Our paper accepted at CVPR 2023 conference
                 <li><b>September 2022</b>: I started working as a Research Assistant in <a href="https://mbzuai.ac.ae/">MBZUAI</a>
@@ -62,11 +72,11 @@
             </ul>
 
 
-        <h2>Publications</h2>
+        <h2 id="publications">Publications</h2>
 
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr onmouseout="font_stop()" onmouseover="font_start()">
+          <tr  >
             <td style="padding:20px;width:25%;vertical-align:middle">
               <img src="images/calibration.png" alt="3dLatNav" style="border-style: none" width="200">
             </td>
@@ -77,7 +87,7 @@
               <br>
               <em> CVPR 2023</em>
               <br>
-             
+            
               <p>
               A novel train time calibration method for object detection.
               </p>
@@ -87,8 +97,8 @@
           </tr>
         </tbody></table>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr onmouseout="font_stop()" onmouseover="font_start()">
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr  >
             <td style="padding:20px;width:25%;vertical-align:middle">
               <img src="images/noise_reduction.jpg" alt="3dLatNav" style="border-style: none" width="200">
             </td>
@@ -99,11 +109,11 @@
               <br>
               <em>  IEEE SSP - 2023</em>
               <br>
-             
+            
               <p>
                 compares the performance of wavelet transformation of
                 ten wavelet families with soft and hard thresholding methods
-                against adaptive filters .
+                against adaptive filters.
               </p>
             </td>
           </tr>
@@ -114,20 +124,20 @@
 
 
 
-    <h2>Projects</h2>
+    <h2 id="projects">Projects</h2>
 
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr onmouseout="font_stop()" onmouseover="font_start()">
+      <tr  >
         <td style="padding:20px;width:25%;vertical-align:middle">
           <img src="images/3D-CNN-ss-model-architecture.png" alt="3dLatNav" style="border-style: none" width="200">
         </td>
         <td style="padding:20px;width:75%;vertical-align:middle">
             <papertitle>Unsupervised/self-supervised learning to spontaneously acquire infant-level perception</papertitle>
-         
+        
           <p>
             This project aims to develop computational models for the spontaneous acquisition of infant-level perceptual understanding from realistic data in an unsupervised manner, 
-            similar to the development of such capabilities in early childhood. In the end, the developed system will be able to learn,  powerful and robust visual representations, 
-            which are useful for recognizing objects and understanding their interactions with the surroundings. 
+            similar to the development of such capabilities in early childhood. In the end, the developed system will be able to learn,  
+            powerful and robust visual representations. 
             As the first step of the project, currently I am working on evaluating available SOTA self-supervised learning methods in different datasets. 
             This project is supervised by Dr. Muhammad Hari Khan at MBZUAI and Dr. Daniel Harai at Weizman Institute of Science, Israel.
           </p>
@@ -140,13 +150,13 @@
 
 
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr onmouseout="font_stop()" onmouseover="font_start()">
+      <tr>
         <td style="padding:20px;width:25%;vertical-align:middle">
           <img src="images/us.jpeg" alt="3dLatNav" style="border-style: none" width="200">
         </td>
         <td style="padding:20px;width:75%;vertical-align:middle">
             <papertitle>Machine learning based diagnosis system for breat cancer detection</papertitle>
-         
+        
           <p>
             I am working in the INFOSTRATEG project: A supporting system for diagnosis of breast cancer lesions using ultrasonography and machine learning, supervised by Dr. Norbert Zolek.
                     </p>
@@ -159,17 +169,17 @@
 
 
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr onmouseout="font_stop()" onmouseover="font_start()">
+      <tr  >
         <td style="padding:20px;width:25%;vertical-align:middle">
           <img src="images/litebc.jpeg" alt="3dLatNav" style="border-style: none" width="200">
         </td>
         <td style="padding:20px;width:75%;vertical-align:middle">
             <papertitle>Using image analysis to estimate the density of blood cells</papertitle>
-         
+        
           <p>
             This project aimed to estimate the density of various blood cell types based on visual data acquired by the HemoScope device which is developed by LiteBC (project partner). 
             The videos/images were analyzed and transformed into single numbers representing the quantities of various parameters: white blood cells count, red blood cells count, haemoglobin levels, etc.
-             The training and testing processes were based on both annotated data and results of traditional blood tests. Finally, blood count results were given in 30 seconds non-invasively.
+            The training and testing processes were based on both annotated data and results of traditional blood tests. Finally, blood count results were given in 30 seconds non-invasively.
                     </p>
         </td>
       </tr>
@@ -180,13 +190,13 @@
 
 
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr onmouseout="font_stop()" onmouseover="font_start()">
+      <tr  >
         <td style="padding:20px;width:25%;vertical-align:middle">
           <img src="images/retina.jpeg" alt="3dLatNav" style="border-style: none" width="200">
         </td>
         <td style="padding:20px;width:75%;vertical-align:middle">
             <papertitle>Retina multi stages formation/deformation detection</papertitle>
-         
+        
           <p>
             This project investigated the opportunity to explore the ML solution to detect the retina deformation and supporting the Diabetic Macular Edema (DME) identification. 
             After preprocessing the images, we extracted the nerve fibre layer (above area of the retina) and coefficient of the it’s curve using vertical projection since it is the
@@ -202,13 +212,13 @@
 
 
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr onmouseout="font_stop()" onmouseover="font_start()">
+      <tr  >
         <td style="padding:20px;width:25%;vertical-align:middle">
           <img src="images/promiseq.jpeg" alt="3dLatNav" style="border-style: none" width="200">
         </td>
         <td style="padding:20px;width:75%;vertical-align:middle">
             <papertitle>Object detection for video surveillance applications</papertitle>
-         
+        
           <p>
             At PromiseQ, I developed state-of-the-art algorithms/models for object detection in CCTV applications. 
             I was mainly focused on removing false alarms and improving the accuracy of the overall system using novel advanced methods.          </p>
@@ -221,13 +231,13 @@
 
 
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr onmouseout="font_stop()" onmouseover="font_start()">
+      <tr  >
         <td style="padding:20px;width:25%;vertical-align:middle">
           <img src="images/bondy.jpeg" alt="3dLatNav" style="border-style: none" width="200">
         </td>
         <td style="padding:20px;width:75%;vertical-align:middle">
             <papertitle>Using satellite imagery for reforestation in Madagascar </papertitle>
-         
+        
           <p>
             I worked on developing a machine learning-based model using satellite images that will allow monitoring more effectively the land reforest. 
             AI model(s) will be trained using remote sensing data and the models will be able to detect the trees and determine the biomass of land given an image. 
@@ -244,13 +254,13 @@
 
     
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr onmouseout="font_stop()" onmouseover="font_start()">
+      <tr  >
         <td style="padding:20px;width:25%;vertical-align:middle">
           <img src="images/blood glucose.png" alt="3dLatNav" style="border-style: none" width="200">
         </td>
         <td style="padding:20px;width:75%;vertical-align:middle">
             <papertitle>Non invasive blood glucose measurement </papertitle>
-         
+        
           <p>
             I developed a machine learning model to predict blood glucose level using non invasive method. Bio impedance, skin thickness, melanin level and heart rate were 
             taken as the physiological parameters and real blood glucose level was used as the reference value. 
@@ -265,17 +275,19 @@
 
         
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr onmouseout="font_stop()" onmouseover="font_start()">
+      <tr  >
         <td style="padding:20px;width:25%;vertical-align:middle">
           <img src="images/drop-catching-system-architecture.jpg" alt="3dLatNav" style="border-style: none" width="200">
         </td>
         <td style="padding:20px;width:75%;vertical-align:middle">
             <papertitle>Dropcatching system to catch competitive domains </papertitle>
-         
+        
           <p>
-            I was a key member (then the team leader) of a team that developed a state-of-the-art domain drop catcher for a European domain registrar which 
-            uses a data-driven intelligent approach to identify 
-            and catch the most valuable domains. Distributed drop catcher consists of hundreds of concurrent bots that run at speeds less than a microsecond to achieve very high drop catching rates. The algorithm achieved superior real-time performance compared to the state-of-the-art algorithms.
+            I was a key member (then the team leader) of a team that developed a state-of-the-art domain drop catcher 
+            which uses a data-driven intelligent approach to identify 
+            and catch the most valuable domains. Distributed drop catcher consists of hundreds of 
+            concurrent bots that run at speeds less than a microsecond to achieve very high drop catching rates. 
+            The algorithm achieved superior real-time performance compared to the state-of-the-art algorithms.
           </p>
         </td>
       </tr>
@@ -287,18 +299,18 @@
 
             
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr onmouseout="font_stop()" onmouseover="font_start()">
+      <tr  >
         <td style="padding:20px;width:25%;vertical-align:middle">
           <img src="images/bte.jpeg" alt="3dLatNav" style="border-style: none" width="200">
         </td>
         <td style="padding:20px;width:75%;vertical-align:middle">
             <papertitle>Developing a Behind the Ear (BTE) hearing aid </papertitle>
-         
+        
           <p>
-            As for my thesis, we developed a prototype of a behind the ear hearing aid which enhances speech in noisy environments as 
+            As for the final thesis, we developed a prototype of a behind the ear hearing aid which enhances speech in noisy environments as 
             the first phase of manufacturing hearing aids in Sri Lanka 
             with the help of Wickramarachchi Institute of Speech and Hearing.
-            I mainly worked in the algorithm development area where I built algorithms using MATLAB for noise reduction using Wavelet transform, 
+            I mainly worked in the algorithm development where I built algorithms using MATLAB for noise reduction using Wavelet transform, 
             feedback reduction using adaptive filters and frequency shaping.
           </p>
         </td>
@@ -309,17 +321,17 @@
 
 
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr onmouseout="font_stop()" onmouseover="font_start()">
+      <tr  >
         <td style="padding:20px;width:25%;vertical-align:middle">
           <img src="images/empatica.jpg" alt="3dLatNav" style="border-style: none" width="200">
         </td>
         <td style="padding:20px;width:75%;vertical-align:middle">
             <papertitle>Develop a wearable device for human stress detection</papertitle>
-         
+        
           <p>
             In my internship at Synergen Technology Labs, I completed the first stage of wearable device to detect human stress using a wearable device. 
             Algorithms were implemented to get readings from physiological signals such as gsr, skin temperature, heart rate, body acceleration and get a value for stress.
-             Machine learning model was used to identify the type of the stress as relax, cognitive stress, emotional stress, and physical stress.
+            Machine learning model was used to identify the type of the stress as relax, cognitive stress, emotional stress, and physical stress.
           </p>
         </td>
       </tr>
@@ -329,13 +341,13 @@
 
 
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr onmouseout="font_stop()" onmouseover="font_start()">
+      <tr  >
         <td style="padding:20px;width:25%;vertical-align:middle">
           <img src="images/ecg.png" alt="3dLatNav" style="border-style: none" width="200">
         </td>
         <td style="padding:20px;width:75%;vertical-align:middle">
             <papertitle>ECG monitoring</papertitle>
-         
+        
           <p>
             Developed an electronic circuit to detect ecg signals from hand. The circuit was designed to remove noise at the circuit level. AdaFruit feather the board was used to 
             transmit signals to MATLAB software.
@@ -350,15 +362,15 @@
 
 
 
-    <h2>Experience</h2>
+    <h2 id="experience">Experience</h2>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr onmouseout="font_stop()" onmouseover="font_start()">
+          <tr  >
             <td style="padding:20px;width:25%;vertical-align:middle">
               <img src="images/mbzuai.png" alt="MBZUAI" style="border-style: none" width="200">
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-               <papertitle>Mohamed Bin Zayed University of Artificial Intelligence, Abu Dhabi, United Arab Emirates</papertitle>
+              <papertitle>Mohamed Bin Zayed University of Artificial Intelligence, Abu Dhabi, United Arab Emirates</papertitle>
               <br>
               Research Assistant
               <br>
@@ -373,14 +385,14 @@
 
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr onmouseout="font_stop()" onmouseover="font_start()">
+          <tr  >
             <td style="padding:20px;width:25%;vertical-align:middle">
               <img src="images/ippt_pan.jpg" alt="Veracity" style="border-style: none" width="200">
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-               <papertitle>Institute of Fundamental Technological Research POLISH ACADEMY OF SCIENCE, Warsaw, Poland</papertitle>
+              <papertitle>Institute of Fundamental Technological Research POLISH ACADEMY OF SCIENCE, Warsaw, Poland</papertitle>
               <br>
-               Machine Learning Researcher
+              Machine Learning Researcher
               <br>
               September 2022 - Present
               <p></p>
@@ -392,12 +404,12 @@
         </tbody></table>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr onmouseout="font_stop()" onmouseover="font_start()">
+          <tr  >
             <td style="padding:20px;width:25%;vertical-align:middle">
               <img src="images/Omdena.png" alt="USYD" style="border-style: none" width="200">
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-               <papertitle>Omdena</papertitle>
+              <papertitle>Omdena</papertitle>
               <br>
               Machine Learning Engineer
               <br>
@@ -411,12 +423,12 @@
         </tbody></table>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr onmouseout="font_stop()" onmouseover="font_start()">
+          <tr  >
             <td style="padding:20px;width:25%;vertical-align:middle">
               <img src="images/promiseq_logo.png" alt="USYD" style="border-style: none" width="200">
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-               <papertitle>PromiseQ, Germany</papertitle>
+              <papertitle>PromiseQ, Germany</papertitle>
               <br>
               Research Machine Learning Engineer
               <br>
@@ -431,12 +443,12 @@
 
         
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr onmouseout="font_stop()" onmouseover="font_start()">
+          <tr  >
             <td style="padding:20px;width:25%;vertical-align:middle">
               <img src="images/xeptagond.jpeg" alt="USYD" style="border-style: none" width="200">
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-               <papertitle>Xeptagon Pvt Ltd, Sri Lanka</papertitle>
+              <papertitle>Xeptagon Pvt Ltd, Sri Lanka</papertitle>
               <br>
               Software Engineer
               <br>
@@ -449,14 +461,14 @@
           </tr>
         </tbody></table>
 
-             
+            
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr onmouseout="font_stop()" onmouseover="font_start()">
+          <tr  >
             <td style="padding:20px;width:25%;vertical-align:middle">
               <img src="images/stl.png" alt="USYD" style="border-style: none" width="200">
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-               <papertitle>Synergen Technology Labs (Pvt) Ltd, Sri Lanka</papertitle>
+              <papertitle>Synergen Technology Labs (Pvt) Ltd, Sri Lanka</papertitle>
               <br>
               
 Research Engineer
@@ -473,15 +485,15 @@ Research Engineer
 
 
 
-    <h2>Education</h2>
+    <h2 id="more">Education</h2>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr onmouseout="font_stop()" onmouseover="font_start()">
+          <tr  >
             <td style="padding:20px;width:25%;vertical-align:middle">
               <img src="images/UOM.png" alt="UOM" style="border-style: none" width="200">
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-               <papertitle>University of Moratuwa</papertitle>
+              <papertitle>University of Moratuwa</papertitle>
               <br>
               Bachelor's in Science Engineering (Hons) specialized in Biomedical Engineering. 
               <br>
@@ -526,5 +538,80 @@ Research Engineer
   </table>
   Template from <a href="https://jonbarron.info/">this website</a>.
 </body>
+<script>
+var topMenu = document.getElementById("navbar")
+var menuItems = topMenu.children
 
+var about = document.getElementById('about').offsetTop -80
+var news = document.getElementById('news').offsetTop -80
+var publications = document.getElementById('publications').offsetTop-80
+var projects = document.getElementById('projects').offsetTop-80
+var experience = document.getElementById('experience').offsetTop-80
+var more = document.getElementById('more').offsetTop-80
+window.onscroll = function(ev) {
+  var currentY = window.scrollY;
+  if(currentY < news){ 
+      for(let i=0;i<menuItems.length;i++){
+        if(menuItems[i].hash==='#about'){
+          menuItems[i].classList.add("active")  
+        }else{
+          menuItems[i].classList.remove("active")  
+        }
+      }
+    }
+
+    if(currentY > news && currentY < publications){ 
+      for(let i=0;i<menuItems.length;i++){
+        if(menuItems[i].hash==='#news'){
+          menuItems[i].classList.add("active")  
+        }else{
+          menuItems[i].classList.remove("active")  
+        }
+      }
+    }
+
+    if(currentY > publications && currentY < projects){ 
+      for(let i=0;i<menuItems.length;i++){
+        if(menuItems[i].hash==='#publications'){
+          menuItems[i].classList.add("active")  
+        }else{
+          menuItems[i].classList.remove("active")  
+        }
+      }
+    }
+
+    if(currentY > projects && currentY < experience){ 
+      for(let i=0;i<menuItems.length;i++){
+        if(menuItems[i].hash==='#projects'){
+          menuItems[i].classList.add("active")  
+        }else{
+          menuItems[i].classList.remove("active")  
+        }
+      }
+    }
+
+    if(currentY > experience && currentY < more){ 
+      for(let i=0;i<menuItems.length;i++){
+        if(menuItems[i].hash==='#experience'){
+          menuItems[i].classList.add("active")  
+        }else{
+          menuItems[i].classList.remove("active")  
+        }
+      }
+    }
+
+    if(currentY > more){ 
+      for(let i=0;i<menuItems.length;i++){
+        if(menuItems[i].hash=='#more'){
+          menuItems[i].classList.add("active")  
+        }else{
+          menuItems[i].classList.remove("active")  
+        }
+      }
+    }
+
+   
+};
+
+  </script>
 </html>
