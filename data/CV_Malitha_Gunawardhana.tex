@@ -1,53 +1,33 @@
-\documentclass[a4paper,11pt]{article}
-
-\usepackage{latexsym}
+\documentclass[a4paper,10pt]{article}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
-\usepackage{marvosym}
 \usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
 \usepackage{enumitem}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
-\input{glyphtounicode}
 \usepackage{ragged2e}
+\usepackage[none]{hyphenat}
 \usepackage{needspace}
-\usepackage{graphicx}
-\usepackage{academicons}
-\usepackage[pro]{fontawesome5}
 \usepackage{hyperref}
+\input{glyphtounicode}
 
-\hypersetup{
-    colorlinks=true,
-    linkcolor=blue,
-    filecolor=magenta,
-    urlcolor=black,
-    pdftitle={Malitha Gunawardhana - CV},
-    pdfpagemode=FullScreen,
-}
-
+\hypersetup{colorlinks=true,linkcolor=blue,filecolor=magenta,urlcolor=black,pdftitle={Malitha Gunawardhana - CV},pdfpagemode=UseNone}
 \pagestyle{fancy}
 \fancyhf{}
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
-
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.54in}
-\addtolength{\textheight}{1.00in}
-
+\addtolength{\topmargin}{-.70in}
+\addtolength{\textheight}{1.38in}
 \urlstyle{same}
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
-
-\titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
-
+\titleformat{\section}{\vspace{-4pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 \pdfgentounicode=1
 
 \newcommand{\resumeSubheading}[4]{
@@ -57,184 +37,163 @@
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
-
-\newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
+\newcommand{\resumeExperience}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#3} & #4 \\
+      \textit{\small#1} & \textit{\small #2} \\
     \end{tabular*}\vspace{-7pt}
 }
-
+\newcommand{\resumeExperienceLong}[4]{
+  \vspace{-2pt}\item
+    \begin{tabularx}{0.97\textwidth}[t]{@{}Xr@{}}
+      \textbf{#3} & #4 \\
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabularx}\vspace{-7pt}
+}
+\newcommand{\resumeEducation}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProject}[3]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      #1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in,label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItem}[1]{\item \small #1}
-\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=1.8pt,parsep=0pt,topsep=2.1pt,partopsep=0pt]}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4.5pt}}
-\newcommand{\resumeDetailListStart}{\begin{itemize}[itemsep=0pt,parsep=0pt,topsep=0pt,partopsep=0pt]}
-\newcommand{\resumeDetailListEnd}{\end{itemize}\vspace{1pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=0.5pt,parsep=0pt,topsep=1.0pt,partopsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5.5pt}}
 
 \begin{document}
 
 \begin{center}
-    \textbf{\Huge \scshape Malitha Gunawardhana} \\[2mm]
-    \footnotesize
-    \raisebox{-0.1\height}{\faPhone} \underline{021 287 7840} ~
-    {\faHome { \underline{Auckland CBD, 1010}}} ~
-    {\faEnvelope \underline{\href{mailto:malithagunawardhana96@gmail.com}{malithagunawardhana96@gmail.com}}} ~
-    {\faLinkedin \underline{\href{https://www.linkedin.com/in/malitha-gunawardhana/}{linkedin.com/in/malitha-gunawardhana}}} ~
-    \\[1.2mm]
-    {\faGlobe \underline{\href{https://malitha123.github.io/malitha/}{github.io/malitha}}} ~
-    \vspace{-12pt}
+  \textbf{\Huge \scshape Malitha Gunawardhana} \\[2mm]
+  \footnotesize
+  021 287 7840 ~\textbar~ Auckland, New Zealand
+  ~\textbar~ \href{mailto:malithagunawardhana96@gmail.com}{malithagunawardhana96@gmail.com}
+  ~\textbar~ \href{https://www.linkedin.com/in/malitha-gunawardhana/}{LinkedIn}
+  ~\textbar~ \href{https://github.com/Malitha123}{GitHub}
+  ~\textbar~ \href{https://malitha123.github.io/malitha/}{Website}
+  ~\textbar~ \href{https://scholar.google.com/citations?user=tsvNezcAAAAJ}{Google Scholar}
+  \vspace{-2pt}
 \end{center}
 
 \section{Summary}
+\begin{itemize}[leftmargin=0.15in,label={}]
+\item \justifying
+Machine Learning Engineer, AI Engineer and Data Scientist with 5 years of professional experience across machine learning, AI and software engineering, complemented by a PhD in deep learning, computer vision and model reliability. Built end-to-end systems across generative AI, agentic AI, computer vision, time-series and sensor analytics, spanning data preparation, experimentation, APIs, deployment, monitoring and failure analysis. Delivered measurable outcomes including more than 70\% reduction in seismic processing effort, more than 5\% reduction in false alarms across 3,000+ cameras and 90\%+ success in a low-latency production platform. Strong in Python, software engineering, MLOps, cloud deployment, statistical evaluation and stakeholder collaboration. Seeking full-time roles across AI engineering, machine learning, data science and software engineering where I can build reliable, production-focused systems that solve complex real-world problems.
+\end{itemize}
+
+\section{Professional Experience}
 \resumeSubHeadingListStart
-\resumeSubheading{}{}{}{}
+\resumeExperience{Viotel Pty Ltd}{Parnell, Auckland}{Machine Learning Engineer (Part-Time)}{Mar 2026 - Sep 2026}
 \resumeItemListStart
-\vspace{-12pt}
-\justifying
- \noindent Machine Learning, Data Science, and Software Engineering professional with experience building and deploying applied AI, predictive systems and data solutions, plus a PhD in deep learning completed in August 2026. Experienced across the end-to-end ML lifecycle, from data pipelines and curation through model development, evaluation and production deployment, using Python, PyTorch, SQL and cloud/MLOps tooling. Track record of measurable production impact, including a 70\% reduction in manual processing time, with experience translating ambiguous, cross-disciplinary requirements into systems used by technical and non-technical stakeholders.
-
-
-
+\resumeItem{Developed and deployed an end-to-end deep-learning system for \textbf{automated seismic phase identification} across \textbf{3,700+ events and 30,000+ station samples}, reducing geophysicists' manual processing time by \textbf{more than 70\%}.}
+\resumeItem{Analysed high-frequency sensor data across \textbf{10+ telecommunications towers}, combining environmental context, controlled experiments and threshold tuning to separate abnormal vibration from normal variation and progress a proof of concept to alpha testing on four towers.}
+\resumeItem{Packaged inference with \textbf{Docker}, automated recurring processing on AWS-hosted data, and performed sensor- and time-stratified failure analysis to distinguish model errors from hardware faults, timing issues and site noise.}
 \resumeItemListEnd
-\vspace{-2pt}
+
+\resumeExperienceLong{IPPT-PAN}{Warsaw, Poland}{Machine Learning Engineer \normalfont{\small(remote from Dec 2023)}}{Sep 2022 - Jan 2025}
+\resumeItemListStart
+\resumeItem{Developed deep-learning models for \textbf{breast-tumour segmentation, benign/malignant classification and BI-RADS prediction} using a curated multi-centre dataset of \textbf{3,000+ ultrasound images}, achieving \textbf{more than 86\% Dice} for tumour segmentation.}
+\resumeItem{Built reusable data and ML workflows for sourcing, curation, preprocessing, label/data-quality checks, training and evaluation, converting research notebooks into reproducible \textbf{AWS and Docker-based pipelines}.}
+\resumeItem{Evaluated performance, bias and generalisation across hospitals, datasets, scanner differences and patient subgroups using cross-validation, cross-dataset testing and systematic error analysis.}
+\resumeItemListEnd
+
+\resumeExperienceLong{Mohamed bin Zayed University of Artificial Intelligence (MBZUAI)}{Abu Dhabi, UAE}{Artificial Intelligence Researcher}{Sep 2022 - Sep 2023}
+\resumeItemListStart
+\resumeItem{Conducted research across \textbf{self-supervised video learning, semi-supervised learning and image-model calibration}, designing controlled experiments and benchmarking methods for generalisation and predictive reliability.}
+\resumeItem{Co-developed a train-time object-detection calibration method that reduced calibration error against baselines on in-domain and out-of-domain benchmarks, resulting in a \textbf{CVPR 2023 publication}.}
+\resumeItemListEnd
+
+\resumeExperience{PromiseQ GmbH}{Berlin, Germany}{Machine Learning Engineer}{Jun 2022 - Nov 2022}
+\resumeItemListStart
+\resumeItem{Developed and optimised \textbf{real-time computer-vision models} for an AI-surveillance platform operating across \textbf{3,000+ CCTV cameras}, covering detection, tracking and safety/security use cases.}
+\resumeItem{Reduced false alarms by \textbf{more than 5\%} through model calibration, error analysis, retraining and improvements to detection, tracking and post-processing logic.}
+\resumeItem{Monitored deployed-model performance, input quality, drift, confidence, latency, incidents and model versions; debugged production ML workflows across \textbf{GCP and AWS}, streaming data, APIs and GitHub-based CI/CD.}
+\resumeItemListEnd
+
+\resumeExperience{Xeptagon (Pvt) Ltd}{Colombo, Sri Lanka}{Full-Stack Software Engineer}{Mar 2021 - May 2022}
+\resumeItemListStart
+\resumeItem{Engineered a \textbf{low-latency production domain drop-catching platform} using Go, MongoDB, REST APIs, TypeScript and JavaScript, achieving a \textbf{90\%+ successful domain catch rate} with successful catches completed within approximately \textbf{50 ms} of availability.}
+\resumeItem{Translated ambiguous requirements from CEOs, CTOs and managers into backend services, APIs, database schemas, logging and production tooling while diagnosing live-system behaviour as requirements evolved.}
+\resumeItem{Directed a four-member team across architecture decisions, project planning, technical documentation and code review.}
+\resumeItemListEnd
+
+\resumeExperience{Synergen Technology Labs (Pvt) Ltd}{Colombo, Sri Lanka}{Software Engineer (Intern)}{Jun 2019 - Dec 2019}
+\resumeItemListStart
+\resumeItem{Developed signal-processing and machine-learning pipelines for four-class physiological stress classification, achieving \textbf{more than 90\% accuracy} on a held-out participant test set in an internal proof of concept.}
+\resumeItemListEnd
 \resumeSubHeadingListEnd
 
-\section{Experience}
-\resumeSubHeadingListStart
-
-\resumeSubheading
-{Machine Learning Engineer (Part-Time)}{March 2026 - Sep. 2026}
-{Viotel Pty Ltd}{Parnell, Auckland}
-\resumeItemListStart
-
-\resumeItem{Developed and deployed a deep-learning system for \textbf{seismic wave phase identification} across \textbf{3,700+ seismic events and 30,000+ station samples}, cutting manual processing time by \textbf{more than 70\%}.}
-
-\resumeItem{Developed and deployed \textbf{Python time-series and anomaly-detection pipelines} that flag abnormal vibration patterns across \textbf{8+ telecommunications towers}, replacing manual inspection with automated monitoring of live sensor feeds.}
-
-\resumeItem{Conducted \textbf{data-quality and diagnostic analysis} on raw sensor streams with geophysicists and a three-member field team, isolating instrument faults, validating model outputs against expert labels, and reporting findings that guided deployment of \textbf{17 seismic sensors} across the Taup\={o} region.}
-\resumeItemListEnd
-
-\resumeSubheading
-{Machine Learning Engineer \normalfont{\small(remote from Dec. 2023)}}{Sep. 2022 - Jan. 2025}
-{Institute of Fundamental Technological Research, Polish Academy of Sciences (IPPT PAN)}{Warsaw, Poland}
-\resumeItemListStart
-\resumeItem{Developed deep-learning models for \textbf{breast tumour identification from ultrasound images}, reaching \textbf{86\% identification accuracy} and enabling a low-cost computer-aided detection system for resource-limited screening settings.}
-\resumeItem{Designed \textbf{reusable, reproducible medical-imaging pipelines} covering data sourcing, curation, preprocessing, quality assurance, training, evaluation and cross-dataset comparison, enabling new datasets to be incorporated without rebuilding the workflow.}
-\resumeItem{Collaborated with \textbf{clinicians, researchers and engineers} to define requirements, establish evaluation criteria, communicate model limitations, and keep technical outputs usable by non-ML stakeholders.}
-\resumeItemListEnd
-
-\resumeSubheading
-{Artificial Intelligence Researcher \normalfont{\small(concurrent with IPPT PAN role)}}{Sep. 2022 - Sep. 2023}
-{Mohamed bin Zayed University of Artificial Intelligence (MBZUAI)}{Abu Dhabi, UAE}
-\resumeItemListStart
-\resumeItem{Developed \textbf{self-supervised and semi-supervised} models for videos and images that maintained performance under limited labelled-data conditions, reducing the volume of manual annotation required.}
-\resumeItem{Conducted controlled experiments on \textbf{LLMs, network calibration and deep-learning reliability}, quantifying failure modes and producing evaluation evidence that informed model-selection decisions.}
-\resumeItem{Led a four-member team through experiment design, analysis and delivery of findings, with results published and presented at leading artificial intelligence conferences.}
-\resumeItemListEnd
-
-
-\resumeSubheading
-{Machine Learning Engineer}{June 2022 - Nov. 2022}
-{PromiseQ GmbH}{Berlin, Germany}
-\resumeItemListStart
-\resumeItem{Optimised deep-learning models for a \textbf{live surveillance platform running across 3,000+ CCTV cameras}, diagnosing recurring failure modes and prediction errors in production traffic.}
-\resumeItem{\textbf{Reduced false alarms by 5\%} through network calibration and error analysis, measurably improving the reliability of a tool used by operators every day.}
-\resumeItem{Collaborated across engineering and ML teams to monitor deployed-model performance, triage production incidents, and improve system reliability.}
-\resumeItemListEnd
-
-\resumeSubheading
-{Full-Stack Software Engineer}{March 2021 - May 2022}
-{Xeptagon (Pvt) Ltd}{Colombo, Sri Lanka}
-\resumeItemListStart
-\resumeItem{Engaged directly with senior stakeholders, including \textbf{CEOs, CTOs and managers}, to understand operational processes, clarify ambiguous and evolving requirements, and translate them into production systems.}
-
-\resumeItem{Led a four-member team delivering a low-latency \textbf{domain drop-catching system} with over \textbf{90\% success} at under \textbf{50 ms latency}, integrating concurrent backend components and optimising execution performance.}
-
-\resumeItem{Developed audio-processing functionality for a student learning management system, transforming \textbf{80+ audio signals} into reusable structured features through signal processing and feature engineering.}
-\resumeItemListEnd
-
-\resumeSubheading
-{Software Engineer (Intern)}{June 2019 - Dec. 2019}
-{Synergen Technology Labs (Pvt) Ltd}{Colombo, Sri Lanka}
-\resumeItemListStart
-
-\resumeItem{Contributed to the design and development of a wearable physiological-signal acquisition device, and collected an original dataset through controlled stress-inducing experiments.}
-
-\resumeItem{Developed physiological signal-processing and ML pipelines for stress classification, achieving over \textbf{90\% accuracy} across four stress categories.}
-\resumeItemListEnd
-
-\resumeSubHeadingListEnd
-
-\renewcommand{\baselinestretch}{1.02}\selectfont
 \section{Education}
 \resumeSubHeadingListStart
-\resumeSubheading
-  {Doctor of Philosophy \normalfont{\small(Deep learning, Computer Vision \& Data Science)}}{Dec. 2023 - Aug. 2026}
-  {University of Auckland}{Auckland, New Zealand}
+\resumeEducation{University of Auckland}{Auckland, New Zealand}{Doctor of Philosophy \normalfont{\small(Deep Learning, Computer Vision \& Data Science)}}{Dec 2023 - Aug 2026}
 \resumeItemListStart
-  \resumeItem{Thesis: Robust, Uncertainty-Aware, and Scalable Deep Learning for Bi-Atrial Segmentation from LGE-MRI in Atrial Fibrillation. \textbf{Award: Health Research Council Scholarship.} Findings published and presented at international conferences.}
-  \resumeItem{Designed and conducted {controlled experiments} on \textbf{semantic segmentation, self-supervised learning and network calibration} across multiple large imaging datasets, applying \textbf{cross-validation, statistical hypothesis testing, uncertainty quantification and error analysis} to compare competing approaches and communicate results to clinical and engineering stakeholders.}
-  \resumeItem{Managed the end-to-end data workflow, including \textbf{data curation, cleaning, preprocessing, exploratory data analysis and label quality assurance}, resolving distribution shift and annotation inconsistency across sources.}
-  \resumeItem{Developed reproducible \textbf{Python ML pipelines with experiment tracking and version control}, enabling systematic \textbf{benchmarking, cross-dataset validation and failure analysis}.}
-  \resumeItem{Developed a \textbf{RAG-based literature agent} over a local corpus of research papers using PDF parsing, chunking, \textbf{embeddings and vector search} with an LLM agent, answering natural-language queries with cited source passages and streamlining literature retrieval.}
+\resumeItem{\textbf{Thesis:} Robust, Uncertainty-Aware, and Scalable Deep Learning for Bi-Atrial Segmentation from LGE-MRI in Atrial Fibrillation. \textbf{Award: Health Research Council Scholarship.}}
+\resumeItem{Built the full ML lifecycle across multi-centre clinical datasets, including sourcing and curation, annotation and label-quality assurance, preprocessing, training, experiment tracking, systematic evaluation, reproducibility and failure analysis.}
+\resumeItem{Evaluated robustness, generalisation, uncertainty and model risk under distribution shift using controlled experiments, confidence intervals, statistical testing and clinically meaningful error analysis.}
+\resumeItem{Developed self-supervised representation-learning workflows and reproducible research infrastructure using HPC, multi-GPU training, Docker, automated jobs and version control, collaborating with clinicians and progressing the work to a clinical research prototype.}
 \resumeItemListEnd
 
-\resumeSubheading
-  {B.Sc. Engineering Honours}{Jan. 2017 - July 2021}
-  {University of Moratuwa}{Moratuwa, Sri Lanka}
+\resumeEducation{University of Moratuwa}{Moratuwa, Sri Lanka}{B.Sc. Engineering Honours}{Jan 2017 - Jul 2021}
+\resumeSubHeadingListEnd
+
+\section{Selected Technical Projects}
+\resumeSubHeadingListStart
+\resumeProject{Healthcare Voice and Chat Assistant}{Personal Project}{Agentic AI, RAG, APIs, observability and cloud deployment}
 \resumeItemListStart
-  \resumeItem{Dean's list placement in Semester 7. Key modules: Engineering Mathematics, Statistics, Image Processing and Machine Vision, Neural Networks and Fuzzy Logic, Medical Imaging, and Signal Processing.}
+\resumeItem{Developed an end-to-end healthcare assistant with a \textbf{FastAPI backend and React/TypeScript interface}, designing LangGraph stateful multi-agent workflows with guardrails, routing, structured outputs, tool calling and MCP integrations.}
+\resumeItem{Integrated \textbf{Qdrant/pgvector RAG}, memory and Redis/Arq background processing, instrumented route/tool/latency behaviour with Langfuse, and deployed with Docker and GitHub Actions CI/CD to \textbf{AWS ECS/Fargate}.}
 \resumeItemListEnd
 
-   \resumeSubheading
-  {Certifications \& Training}{}
-  {}{}
-  \vspace{-20pt}
-
+\resumeProject{ChurnOps: Customer Churn Prediction and MLOps}{Personal Project}{Predictive modelling, data engineering and production ML}
 \resumeItemListStart
-
-    \resumeItem{\textbf{Oracle Cloud Infrastructure 2024 Generative AI Certified Professional} - LLM fundamentals, pre-training, fine-tuning and alignment, generative AI, MLOps.}
-    \resumeItem{\textbf{Microsoft Certified: Azure Fundamentals (AZ-900)} - Azure cloud services, storage, networking, security and virtualisation.}
-    \resumeItem{\textbf{Large Language Model Agents}, UC Berkeley - LLM agents, multi-agents,  RAG, MLOps.}
-    % \resumeItem{\textbf{Deep Learning Specialization}, DeepLearning.AI}
-
-    \resumeItem{\textbf{Data Science Career Track}, 365 Data Science - Python, SQL, data wrangling, statistical analysis, model evaluation.}
-
+\resumeItem{Built reusable pandas/scikit-learn and PySpark/MLlib pipelines connecting validation, preprocessing, model selection and evaluation to batch and Kafka-based streaming inference, with \textbf{MLflow experiment tracking and model registration}.}
+\resumeItem{Implemented data-quality and drift monitoring, Kafka micro-batch inference, Airflow DAGs and Dockerised AWS deployment workflows using \textbf{S3, ECR, ECS/Fargate, RDS and CloudFormation}.}
 \resumeItemListEnd
-
 \resumeSubHeadingListEnd
 
 \section{Technical Skills}
-\begin{itemize}[leftmargin=0.15in, label={}]
+\begin{itemize}[leftmargin=0.15in,label={}]
 \small{\item{
-  \textbf{Programming Languages}{: Python (Pandas, NumPy), SQL, Bash, TypeScript, MATLAB, R} \\
-  \textbf{Machine Learning}{: PyTorch, TensorFlow, Keras, scikit-learn, XGBoost, Transformers, SSMs, Computer Vision, Deep Learning, Predictive and Time-Series Modelling} \\
-  \textbf{Mathematics and Statistics}{: Linear Algebra, Probability, Optimisation, Hypothesis Testing, Cross-Validation, Uncertainty Quantification} \\
-  \textbf{Generative AI and LLMs}{: RAG, LangChain, CrewAI, Weaviate, LLM and Agent-Based Systems, Agentic Workflows, Prompt Engineering, Claude, Codex} \\
-  \textbf{Data and MLOps}{: MLflow, Apache Airflow, PySpark, Kafka, Weights \& Biases, Neptune, Docker, Jenkins CI/CD} \\
-  \textbf{Cloud and Engineering}{: AWS, Azure, GCP, Git, Linux, REST APIs, MongoDB, Jira, Confluence} \\
-  \textbf{Data Analytics and BI}{: Power BI, Tableau, Microsoft Excel, Statistical Analysis, Data Visualisation} \\
+\textbf{Programming Languages}{: Python, SQL, Go, TypeScript, JavaScript, Bash, MATLAB, R} \\
+\textbf{Machine Learning}{: PyTorch, TensorFlow, scikit-learn, Computer Vision, Medical Imaging, Time-Series Modelling, Anomaly Detection, Self-/Semi-Supervised Learning, Model Calibration} \\
+\textbf{Generative AI and LLMs}{: Hugging Face Transformers, RAG, LangChain, LangGraph, MCP, Tool Calling, Structured Outputs, LLM Evaluation, LoRA/QLoRA, GraphRAG, Qdrant, pgvector, Langfuse} \\
+\textbf{Data and Distributed Computing}{: PySpark/MLlib, Kafka, Airflow, PostgreSQL/RDS, Redis, MongoDB} \\
+\textbf{Data Analytics and BI}{: Power BI, Excel, Statistical Analysis, Hypothesis Testing, Data Visualisation, Data Quality Assurance} \\
+\textbf{Developer and AI Tools}{: Docker, AWS, GCP, Azure, MLflow, FastAPI, REST APIs, GitHub Actions, Git, Linux, Jira, Confluence} \\
+\textbf{Technical Domains}{: Deep Learning, Generative AI, Agentic AI, Computer Vision, MLOps, Model Deployment and Monitoring, Signal Processing, Predictive Modelling, Robustness and Generalisation}
 }}
 \end{itemize}
 
 \section{Service and Leadership}
 \resumeSubHeadingListStart
-\resumeProjectHeading{\textbf{Auckland Bioengineering Institute, University of Auckland}}{Feb. 2024 - Aug. 2026}
+\resumeProjectHeading{\textbf{Auckland Bioengineering Institute, University of Auckland}}{2024 -- 2026}
 \resumeItemListStart
-  \resumeItem{Elected Student Council Member representing postgraduate students in university governance, student advocacy, welfare initiatives and policy discussions.}
+\resumeItem{Elected Student Council Member representing postgraduate students in institute discussions and student initiatives.}
 \resumeItemListEnd
-
-\resumeProjectHeading{\textbf{Sustainable Education Foundation}}{July 2024 - Apr. 2025}
+\resumeProjectHeading{\textbf{Sustainable Education Foundation}}{2024 -- 2025}
 \resumeItemListStart
-  \resumeItem{Mentored students through structured academic, professional and personal development guidance.}
+\resumeItem{Mentored students in academic, professional and personal development.}
 \resumeItemListEnd
-
-\resumeProjectHeading{\textbf{Rotaract Club of Alumni of the University of Moratuwa}}{July 2022 - July 2024}
+\resumeProjectHeading{\textbf{Rotaract Club, University of Moratuwa Alumni}}{2016 -- 2024}
 \resumeItemListStart
-  \resumeItem{Vice President for Club Service, coordinating member engagement, fellowship activities and community initiatives.}
+\resumeItem{Vice President, Club Service and former Club Service Director, leading member engagement, fellowship and community initiatives; recipient of multiple Spirit of Service awards.}
 \resumeItemListEnd
 \resumeSubHeadingListEnd
 
